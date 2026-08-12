@@ -1,0 +1,60 @@
+{
+  "entities": {
+    "portfolio": {
+      "title": "Portfolio Settings",
+      "description": "Main portfolio configuration and profile details",
+      "properties": {
+        "profile": { "type": "map" },
+        "about": { "type": "map" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Portfolio projects showcase",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "techStack": { "type": "array" },
+        "features": { "type": "array" },
+        "github": { "type": "string" },
+        "liveDemo": { "type": "string" },
+        "image": { "type": "string" }
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "description": "Categorized technical and soft skills",
+      "properties": {
+        "category": { "type": "string" },
+        "name": { "type": "string" },
+        "proficiency": { "type": "number" },
+        "icon": { "type": "string" }
+      }
+    },
+    "certificates": {
+      "title": "Certificates",
+      "description": "Certificate Vault items",
+      "properties": {
+        "title": { "type": "string" },
+        "issuer": { "type": "string" },
+        "date": { "type": "string" },
+        "credentialId": { "type": "string" },
+        "skills": { "type": "array" },
+        "category": { "type": "string" },
+        "url": { "type": "string" }
+      }
+    },
+    "messages": {
+      "title": "Contact Messages",
+      "description": "Inquiries sent through the contact form",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "subject": { "type": "string" },
+        "message": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    }
+  }
+}
